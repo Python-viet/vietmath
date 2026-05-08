@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", "Arial", sans-serif;
+  --font-serif: "Georgia", serif;
+  
+  --color-primary-blue: #3182CE;
+  --color-ui-bg: #F4F7FA;
+  --color-ui-text: #2D3748;
+}
+
+@layer base {
+  body {
+    @apply bg-ui-bg text-ui-text font-sans;
+  }
+}
+
+.math-text {
+  font-family: var(--font-serif);
+}
+
+.btn-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.katex-formula-inline {
+  @apply bg-slate-100 px-1 border-b border-slate-300 rounded font-serif italic;
+}
